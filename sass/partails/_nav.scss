@@ -1,0 +1,143 @@
+.navbar {
+    padding: 8px;
+    overflow: hidden;
+    position: relative;
+    background: getColor(dark-grey);
+
+    &__brand-name {
+        color: getColor(white);
+        text-decoration: none;
+        font-family: $font-primary;
+        font-size: 25px;
+        padding: 8px;
+        display: block;
+        z-index: 1000;
+        font-weight: 300;
+
+    }
+
+    span {
+        font-weight: 600;
+    }
+    
+    &__nav-links {
+        display: none;
+
+        a {
+            display: block;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 16px;
+            color: getColor(white);
+            text-align: center;
+            text-transform: uppercase;
+            font-family: $font-primary;
+            font-weight: 400;
+    
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        .navbar__login-link  {
+            background: getColor(gold);
+            color: getColor(dark-grey);
+        }
+    }
+
+    .fa-bars {
+        color: getColor(white);
+        font-size: 25px;
+        padding: 8px;
+        position: absolute;
+        display: block;
+        right: 8px;
+        top: 8px;
+    }
+
+    &__nav-cart {
+        font-size: 25px;
+        position: absolute;
+        display: block;
+        right: 50px;
+        top: 15px;
+        color: getColor(gold);
+    }
+
+
+    @media (min-width: $media-ipad) {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+
+        &__brand-name {
+            font-size: 35px;
+            padding-left: 30px;
+        }
+
+        &__nav-links {
+            display: block;
+            display: flex;
+
+             a {
+                background: none;
+                color: getColor(dark-brown);
+                font-weight: 300;
+                font-size: 20px;
+                padding-top: 25px;
+            }
+            .navbar__login-link {
+                background: none;
+                font-weight: 400;
+                position: absolute;
+                display: block;
+                right: 95px;
+                top: 0px;
+                
+            }
+        }
+
+        &__nav-cart {
+            font-size: 35px;
+        }
+
+        .fa-bars {
+            display: none;
+        }
+    }
+
+    @media (min-width: $media-laptop) {
+        max-width: 1200px;
+
+        &__brand-name {
+            font-size: 40px;
+        }
+
+        &__nav-links a{
+            font-size: 30px;
+            margin-left: 30px;
+        }
+        &__nav-cart {
+            font-size: 40px;
+        }
+    }
+}
+
+.navigation-container-products {
+
+    .navbar__brand-name {
+        color: getColor(dark-brown);
+        text-decoration: none;
+        font-family: $font-primary;
+        font-size: 25px;
+        padding: 8px;
+        display: block;
+        z-index: 1000;
+
+    }
+
+    .fa-bars {
+        color: getColor(dark-brown);
+    }
+}

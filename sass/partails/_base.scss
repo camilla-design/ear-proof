@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    color: getColor(dark-grey);
+    font-family: $font-primary;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: $font-headings;
+    font-weight: 700;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: $font-headings;
+    font-weight: 500;
+    font-size: 25px;
+    color: getColor(gold);
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+.view-more-btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: getColor(gold);
+    padding: 10px;
+    color: getColor(dark-grey);
+    border-radius: 5px;
+    box-shadow: 5px 5px getColor(light-grey);
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+img {
+    border-radius: 5px;
+}

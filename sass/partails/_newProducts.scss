@@ -1,0 +1,10 @@
+.new-product-container {
+    background: getColor(dark-grey);
+    color: getColor(light-grey);
+    padding: 20px;
+    text-align: center;
+
+    img {
+        width: 300px;
+    }
+}

@@ -1,0 +1,28 @@
+.featured-products-headline {
+    text-align: center;
+
+    h2 {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    h1 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    img {
+        width: 300px;
+    }
+
+    hr {
+        transform: rotate(90deg);
+        width: 50px;
+        border-top: 2px solid getColor(dark-grey);
+    }
+
+}
+
+.featured-products-container {
+    padding-top: 20px;
+}

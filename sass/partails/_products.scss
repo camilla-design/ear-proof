@@ -1,0 +1,30 @@
+.products-container {
+    img {
+        width: 200px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    a {
+        text-decoration: none;
+        color: getColor(dark-grey);
+
+        h3 {
+            font-size: 20px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        h4 {
+            font-weight: 700;
+            padding-top: 8px;
+            margin-top: 0px;
+        }
+    }
+
+    .product-description {
+        padding-top: 40px;
+    }
+}

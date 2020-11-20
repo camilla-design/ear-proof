@@ -1,0 +1,25 @@
+.hero-container {
+    margin: 0 auto;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 650px;
+
+    .hero-text {
+        padding-left: 16px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    img {
+        width: 350px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    p {
+        padding-bottom: 30px;
+        width: 300px;
+        margin: 0 auto;
+    }
+}

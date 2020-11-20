@@ -1,0 +1,18 @@
+$font-primary: 'Roboto', sans-serif;
+$font-headings: 'Lato', sans-serif;
+
+$colors: (
+    white: #F2F2F0,
+    black:#0D0D0D,
+    light-grey: #BFBFBF,
+    dark-grey: #303840,
+    gold: #BF9E75,
+    yellow: #F2E0BD
+);
+
+@function getColor($color) {
+    @return map-get($colors, $color);
+}
+
+$media-ipad: 700px;
+$media-laptop: 1200px;
