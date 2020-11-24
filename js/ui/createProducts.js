@@ -6,7 +6,7 @@ export function createProducts(json) {
     json.forEach(function (product) {
        
         productContainer.innerHTML += `
-        <a href="./productDetail.html?id=${product.id}">
+        <a href="./detail.html?id=${product.id}">
         <div class="container">
         <div class="product-img">
         <img src="./strapi-api-folder/public${product.image.url}" />

@@ -3,8 +3,8 @@ import { getHeroImage } from "./ui/getHeroImage.js";
 import { featuredProducts } from "./ui/featuredProducts.js";
 import { newProducts } from "./ui/newProducts.js";
 
-const homeUrl = baseUrl + "home";
-const productUrl = baseUrl + "products";
+const homeUrl = baseUrl + "/home";
+const productUrl = baseUrl + "/products";
 
 (async function() {
     try {

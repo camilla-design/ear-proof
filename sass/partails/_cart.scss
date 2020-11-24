@@ -1,0 +1,23 @@
+.cart-container {
+
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+
+    img {
+        width: 100px;
+    }
+
+    .products {
+        display: flex;
+        text-align: left;
+        padding-top: 20px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: getColor(dark-grey);
+    }
+}

@@ -7,10 +7,6 @@ export function featuredProducts(json) {
 
 
     for (let i = 0; i < json.length; i++) {
-        console.log(json[i].featured);
-
-        
-
 
         if (json[i].featured === true){
             featured += `
