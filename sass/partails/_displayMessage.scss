@@ -1,0 +1,21 @@
+.error {
+    border-color: rgb(171, 64, 64);
+    color: white;
+    background: rgb(171, 64, 64);
+    padding: 8px;
+  }
+  
+  .success {
+    border-color: rgb(53, 142, 53);
+    color: white;
+    background: rgb(53, 142, 53);
+    padding: 8px;
+  }
+
+  .active {
+      color: getColor(gold);
+  }
+
+  .edit-form {
+    display: none;
+  }

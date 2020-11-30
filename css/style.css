@@ -46,6 +46,28 @@ img {
   border-radius: 5px;
 }
 
+.error {
+  border-color: #ab4040;
+  color: white;
+  background: #ab4040;
+  padding: 8px;
+}
+
+.success {
+  border-color: #358e35;
+  color: white;
+  background: #358e35;
+  padding: 8px;
+}
+
+.active {
+  color: #BF9E75;
+}
+
+.edit-form {
+  display: none;
+}
+
 .navbar {
   padding: 8px;
   overflow: hidden;
@@ -354,6 +376,43 @@ img {
 .cart-container a {
   text-decoration: none;
   color: #303840;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.login-form input[type=text], .login-form input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  background: #BF9E75;
+  color: #303840;
+  font-size: 20px;
+}
+
+.avatar-login {
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.avatar-login i {
+  font-size: 50px;
+  color: #BF9E75;
 }
 
 footer {

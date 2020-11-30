@@ -6,6 +6,7 @@ import { newProducts } from "./ui/newProducts.js";
 const homeUrl = baseUrl + "/home";
 const productUrl = baseUrl + "/products";
 
+
 (async function() {
     try {
         const response = await fetch(homeUrl);

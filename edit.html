@@ -31,42 +31,39 @@
         </nav>
     </div>
 
-    <div class="hero-container">
-        <div class="hero-text">
-            <h1>Powerful Sound</h1>
-            <h2>And Audio Technologies</h2>
-            <div class="hero-image"></div>
-            <p>We gatantee earproof sound
-                and are always updated with
-                new audio techhnologies</p>
-            <div class="view-more-btn">
-                <a href="#">View more</a>
-            </div>
+    <div class="admin-header">
+        <h1>Edit product</h1>
+        <div class="menu-container"></div>
+    </div>
+
+    <div class="login-form">
+        <div class="loading">
+            loading...
+        </div>
+        <form class="edit-form">
+            <div class="message-container"></div>
+        <div>
+            <label for="title">Title</label>
+            <input id="title" type="text" placeholder="Product title">
         </div>
 
-
-    </div>
-
-    <div class="new-product-container">
-
-    </div>
-
-    <div class="container">
-        <div class="featured-products-headline">
-            <h1>Featured Products</h1>
-            <hr>
-            <h2>Relax.</h2>
-            <h2>Listen.</h2>
-            <h2>Feel.</h2>
-            <div class="featured-products-container">
-
-
-            </div>
-            <div class="view-more-btn">
-                <a href="#">View more</a>
-            </div>
+        <div>
+            <label for="description">Description</label>
+            <input id="description" type="text" placeholder="Description">
         </div>
+
+        <div>
+            <label for="price">price</label>
+            <input id="price" type="text" placeholder="Price">
+        </div>
+
+        <button id="update">Update</button>
+    </form>
     </div>
+
+    
+
+    
 
     <footer>
         <footer>
@@ -95,7 +92,7 @@
     </footer>
 
     <script src="./js/settings/hamburgerMenu.js"></script>
-    <script src="./js/index.js" type="module"></script>
+    <script src="./js/edit.js" type="module"></script>
 </body>
 
 </html>

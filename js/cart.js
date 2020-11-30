@@ -8,7 +8,8 @@ const totalPriceContainer = document.querySelector(".total-price");
 let total = 0;
 
 cartItems.forEach(cart => {
-    cartContainer.innerHTML += `<a href="./detail.html?id=${cart.id}">
+    cartContainer.innerHTML += `
+                                <a href="./detail.html?id=${cart.id}">
                                 <div class="products">
                                 <div class="product-image">
                                 <img src="${baseUrl}${cart.image}" />
