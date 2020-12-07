@@ -1,7 +1,18 @@
-import { displayMessage } from "./components/common/displayMessage.js";
-import { saveToken, saveUser } from "./utils/storage.js";
-import { baseUrl } from "./settings/baseUrl.js";
-import { createMenu } from "./components/common/createMenu.js";
+import {
+    displayMessage
+} from "./components/common/displayMessage.js";
+import {
+    saveToken,
+    saveUser,
+    getToken
+} from "./utils/storage.js";
+import {
+    baseUrl
+} from "./settings/baseUrl.js";
+import {
+    createMenu
+} from "./components/common/createMenu.js";
+
 
 createMenu();
 
@@ -31,7 +42,10 @@ async function doLogin(username, password) {
 
     const url = baseUrl + "/auth/local";
 
-    const data = JSON.stringify({ identifier: username, password: password});
+    const data = JSON.stringify({
+        identifier: username,
+        password: password
+    });
 
     const options = {
         method: "POST",
@@ -54,12 +68,13 @@ async function doLogin(username, password) {
             location.href = "/admin.html";
         }
 
+
+
         if (json.error) {
             displayMessage("error", "Invalid login details", ".message-container");
         }
-        console.log(json);
 
-    } catch(error) {
-        console.log(error);
+    } catch (error) {
+        displayMessage("error", error, ".message-container");
     }
 }

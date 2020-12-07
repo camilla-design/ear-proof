@@ -144,24 +144,28 @@ img {
   .navbar__brand-name {
     font-size: 35px;
     padding-left: 30px;
+    padding-top: 13px;
   }
-  .navbar__nav-links {
+  .navbar .navbar__nav-links {
     display: block;
     display: flex;
   }
-  .navbar__nav-links a {
+  .navbar .navbar__nav-links a {
     background: none;
     font-weight: 300;
     font-size: 20px;
     padding-top: 25px;
   }
-  .navbar__nav-links .navbar__login-link {
+  .navbar .navbar__nav-links a .navbar__login-link {
     background: none;
     font-weight: 400;
     position: absolute;
     display: block;
     right: 95px;
     top: 0px;
+  }
+  .navbar .navbar__nav-links .navbar__login-link {
+    color: #BF9E75;
   }
   .navbar__nav-cart {
     font-size: 35px;
@@ -172,7 +176,7 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .navbar {
+  .navbar .navbar {
     max-width: 1200px;
   }
   .navbar__brand-name {

@@ -1,11 +1,19 @@
-import { getExistingProduct } from "./utils/cartFunction.js";
-import { baseUrl } from "./settings/baseUrl.js";
+import {
+    getExistingProduct
+} from "./utils/cartFunction.js";
+import {
+    baseUrl
+} from "./settings/baseUrl.js";
 
 const cartItems = getExistingProduct();
 
 const cartContainer = document.querySelector(".cart-container");
 const totalPriceContainer = document.querySelector(".total-price");
 let total = 0;
+
+if (cartItems.length === 0) {
+    cartContainer.innerHTML = "Cart is empty";
+}
 
 cartItems.forEach(cart => {
     cartContainer.innerHTML += `
@@ -25,11 +33,5 @@ cartItems.forEach(cart => {
 
     total = value + total;
 
-    totalPriceContainer.innerHTML = "$" + total;
+    totalPriceContainer.innerHTML = "Total $" + total;
 });
-
-
-
-
-
-

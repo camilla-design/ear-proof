@@ -32,8 +32,11 @@
     </div>
 
     <div class="admin-header">
-        <h1>Edit product</h1>
+
         <div class="menu-container"></div>
+    </div>
+    <div class="product-header">
+        <h1>Edit Products</h1>
     </div>
 
     <div class="login-form">
@@ -56,8 +59,22 @@
             <label for="price">price</label>
             <input id="price" type="text" placeholder="Price">
         </div>
+        <div>
+            <label for="image">Choose product image</label>
+            <input type="text" id="image-url" placeholder="url-adress">
+        </div>
+            <input id="id" type="hidden">
+        <div>
+            <label for="featured">Set as featured?</label>
+            <select name="featured-selector" id="featured-selector">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+              </select>
+            </div>
 
         <button id="update">Update</button>
+
+        <div class="delete-product-container"></div>
     </form>
     </div>
 

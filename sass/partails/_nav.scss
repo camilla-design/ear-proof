@@ -74,20 +74,20 @@
         &__brand-name {
             font-size: 35px;
             padding-left: 30px;
+            padding-top: 13px;
         }
 
-        &__nav-links {
+        .navbar__nav-links {
             display: block;
             display: flex;
 
              a {
                 background: none;
-                color: getColor(dark-brown);
                 font-weight: 300;
                 font-size: 20px;
                 padding-top: 25px;
             }
-            .navbar__login-link {
+            a .navbar__login-link {
                 background: none;
                 font-weight: 400;
                 position: absolute;
@@ -95,6 +95,9 @@
                 right: 95px;
                 top: 0px;
                 
+            }
+            .navbar__login-link  {
+                color: getColor(gold);
             }
         }
 
@@ -108,7 +111,9 @@
     }
 
     @media (min-width: $media-laptop) {
-        max-width: 1200px;
+        .navbar {
+            max-width: 1200px;
+        }
 
         &__brand-name {
             font-size: 40px;

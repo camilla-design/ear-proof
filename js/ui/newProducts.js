@@ -1,7 +1,7 @@
 export function newProducts(json) {
     const newProductContainer = document.querySelector(".new-product-container");
 
-        newProductContainer.innerHTML += `
+    newProductContainer.innerHTML += `
         <div class="new-product">
         <h2>New Products</h2>
         <h3>See our new headphones</h3>
@@ -19,4 +19,4 @@ export function newProducts(json) {
                 </div>
 
         `;
-    };
+};

@@ -1,5 +1,12 @@
-import { getExistingProduct } from "./utils/cartFunction.js";
-import { baseUrl } from "./settings/baseUrl.js";
+import {
+    getExistingProduct
+} from "./utils/cartFunction.js";
+import {
+    baseUrl
+} from "./settings/baseUrl.js";
+import {
+    displayMessage
+} from "./components/common/displayMessage.js";
 
 const queryString = document.location.search;
 
@@ -7,17 +14,17 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-if(!id) {
+if (!id) {
     document.location.href = "/";
 }
 
 const productUrl = baseUrl + "/products/" + id;
 
-(async function() {
+(async function () {
     try {
         const response = await fetch(productUrl);
         const details = await response.json();
-    
+
         console.log(details);
 
         document.title = details.title;
@@ -26,8 +33,8 @@ const productUrl = baseUrl + "/products/" + id;
 
         const cartItems = getExistingProduct();
 
-        const doesObjectExist = cartItems.find(function(cart) {
-            
+        const doesObjectExist = cartItems.find(function (cart) {
+
             return parseInt(cart.id) === details.id;
         });
 
@@ -78,17 +85,22 @@ const productUrl = baseUrl + "/products/" + id;
 
             const currentProduct = getExistingProduct();
 
-            const productExist = currentProduct.find(function(cart) {
+            const productExist = currentProduct.find(function (cart) {
                 return cart.id === id;
             });
 
             if (productExist === undefined) {
 
-            const product = { id: id, name: name, image: image, price: price};
+                const product = {
+                    id: id,
+                    name: name,
+                    image: image,
+                    price: price
+                };
 
-            currentProduct.push(product);
+                currentProduct.push(product);
 
-            saveProducts(currentProduct);
+                saveProducts(currentProduct);
 
             } else {
                 const newProducts = currentProduct.filter((newProducts) => newProducts.id !== id);
@@ -97,7 +109,7 @@ const productUrl = baseUrl + "/products/" + id;
             }
 
 
-            
+
         }
 
         function saveProducts(carts) {
@@ -105,6 +117,6 @@ const productUrl = baseUrl + "/products/" + id;
         }
 
     } catch (error) {
-        console.log(error);
+        displayMessage("error", error, ".message-container");
     }
 })();
