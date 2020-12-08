@@ -1,6 +1,5 @@
 .hero-container {
     margin: 0 auto;
-    display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
     height: 650px;
@@ -9,6 +8,9 @@
         padding-left: 16px;
         padding-top: 20px;
         text-align: center;
+    }
+    .hero-image-bigger-screen {
+        display: none;
     }
 
     img {
@@ -21,5 +23,62 @@
         padding-bottom: 30px;
         width: 300px;
         margin: 0 auto;
+    }
+
+    @media (min-width: $media-ipad) {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        height: 300px;
+
+        .hero-image {
+            display: none;
+        }
+
+        .hero-image-bigger-screen {
+            display: block;
+        }
+
+        img {
+            width: 400px;
+            padding: 0;
+        }
+
+        .hero-text {
+            padding-top: 30px;
+        }
+
+        p {
+            padding-top: 20px;
+        }
+    }
+
+    @media (min-width: $media-laptop) {
+        max-width: $media-laptop;
+        margin: 0 auto;
+        height: 500px;
+        padding-top: 90px;
+
+        img {
+            width: 600px;
+        }
+
+        .hero-text {
+            h1 {
+                font-size: 60px;
+            }
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 25px;
+                width: 400px;
+            }
+            .view-more-btn a {
+                font-size: 23px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
     }
 }

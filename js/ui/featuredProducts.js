@@ -10,6 +10,7 @@ export function featuredProducts(json) {
 
     json.forEach(function (product) {
 
+
         if (product.featured === true) {
 
             let allUrlImages = "";
@@ -20,13 +21,19 @@ export function featuredProducts(json) {
                 allUrlImages = product.image_url;
             }
 
+
+
             featuredContainer.innerHTML += `
-        <img src="${allUrlImages}" />
-            <h3>${product.title}</h3>
-            <h4>$ ${product.price}</h4>
+            <div class="featured-content">
+                <img src="${allUrlImages}" />
+                <h3>${product.title}</h3>
+                <h4>$ ${product.price}</h4>
+            </div>
         `;
             featuredHeadline.style.display = "block";
         }
+
+        
 
     });
 

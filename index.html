@@ -15,13 +15,14 @@
 <body>
     <div class="navigation-container">
         <nav class="navbar">
+            <!--hamburgerMenu.js-->
             <a href="./index.html" class="navbar__brand-name">Ear<span>Proof</span></a>
             <div class="navbar__nav-links" id="nav-links">
                 <a href="./index.html">Home</a>
                 <a href="./products.html">Products</a>
-                <a href="./login.html" class="navbar__login-link">Login</a>
             </div>
             <div class="navbar__nav-cart">
+                <a href="./login.html" class="navbar__login-link">Login</a>
                 <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
             <a href="javascript:void(0);" class="icon__hamburger-menu" onclick="hamburgerMenu()">
@@ -32,66 +33,54 @@
     </div>
 
     <div class="hero-container">
+        <div class="hero-image-bigger-screen">
+            <!--getHeroImage.js-->
+        </div>
         <div class="hero-text">
             <h1>Powerful Sound</h1>
             <h2>And Audio Technologies</h2>
-            <div class="hero-image"></div>
+            <div class="hero-image">
+                <!--getHeroImage.js-->
+            </div>
             <p>We gatantee earproof sound
                 and are always updated with
                 new audio techhnologies</p>
             <div class="view-more-btn">
-                <a href="#">View more</a>
+                <a href="./products.html">View more</a>
             </div>
         </div>
-
-
     </div>
 
     <div class="new-product-container">
-
+        <!--newProducts.js-->
     </div>
 
-    <div class="container">
+    <div class="featured-container">
         <div class="featured-products-headline">
             <h1>Featured Products</h1>
             <hr>
-            <h2>Relax.</h2>
-            <h2>Listen.</h2>
-            <h2>Feel.</h2>
+            <div class="qoute">
+                <h2>Relax.</h2>
+                <h2>Listen.</h2>
+                <h2>Feel.</h2>
+            </div>
             <div class="featured-products-container">
-
-
+                <!--featuredProducts-js-->
             </div>
             <div class="view-more-btn">
-                <a href="#">View more</a>
+                <a href="./products.html">View more</a>
             </div>
         </div>
     </div>
 
     <footer>
-        <footer>
-            <div class="footer-container">
-                <div class="brand-logo">
-                <a href="#" class="navbar__brand-name">Ear<span>Proof</span></a>
-            </div>
-            <div class="product-overview">
-                <h5>Product Overview</h5>
-                <li>Headphones</li>
-                <li>Earphones</li>
-            </div>
-            <div class="generally">
-                <h5>Generally</h5>
-                <li>Services</li>
-                <li>About us</li>
-            </div>
-            <div class="social">
-                <h5>Social</h5>
-                <li>News</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
-            </div>
-            </div>
-        </footer>
+        <div class="brand-logo">
+            <a href="./index.html" class="navbar__brand-name">Ear<span>Proof</span></a>
+        </div>
+        <div class="copyright">
+            © 2020 Copyright:
+            <a href="http://camillareppen.no">Camilla Reppen</a>
+        </div>
     </footer>
 
     <script src="./js/settings/hamburgerMenu.js"></script>

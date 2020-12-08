@@ -2,14 +2,6 @@ footer {
     background: getColor(black);
     margin-top: 50px;
     padding-bottom: 40px;
-    
-    .product-overview,
-    .generally,
-    .social {
-        text-align: center;
-        width: 300px;
-        margin: 0 auto;
-    }
 
     .navbar__brand-name {
         font-size: 45px;
@@ -17,23 +9,22 @@ footer {
         padding-top: 30px;
         font-weight: 300;
     }
+    .copyright {
+        color: getColor(white);
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .copyright a {
+        color: getColor(white);
+        text-decoration: none;
 
+        &:hover {
+            color: getColor(gold);
+        }
+    }
     span {
         font-weight: 600;
     }
 
-    h5 {
-        color: getColor(white);
-        font-size: 24px;
-        margin: 16px;
-        padding: 0;
-    }
-
-    li {
-        color: getColor(white);
-        list-style-type: none;
-        font-size: 18px;
-        font-weight: 300;
-        
-    }
 }

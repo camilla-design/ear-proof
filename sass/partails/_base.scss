@@ -31,9 +31,14 @@ p {
     text-transform: uppercase;
     background: getColor(gold);
     padding: 10px;
-    color: getColor(dark-grey);
+    color: getColor(black);
     border-radius: 5px;
     box-shadow: 5px 5px getColor(light-grey);
+
+    &:hover {
+        background: getColor(dark-grey);
+        color: getColor(white);
+    }
 }
 
 .container {
