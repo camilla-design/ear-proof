@@ -1,0 +1,50 @@
+
+.view-more-btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: getColor(gold);
+    padding: 10px;
+    color: getColor(black);
+    border-radius: 5px;
+    box-shadow: 5px 5px getColor(light-grey);
+
+    &:hover {
+        background: getColor(dark-grey);
+        color: getColor(white);
+    }
+}
+
+.cart-container {
+    a {
+        text-decoration: none;
+        color: getColor(dark-grey);
+    }
+}
+
+.add-cart-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: getColor(dark-grey);
+    color: getColor(white);
+    border-radius: 5px;
+    box-shadow: 5px 5px getColor(light-grey);
+    padding: 10px;
+}
+
+.update-btn {
+    background: green;
+    color: getColor(white);
+    margin-top: 20px;
+}
+.detete-button {
+    background: red;
+    color: getColor(white);
+    margin-top: 20px;
+}
+
+button {
+    background: getColor(gold);
+    color: getColor(dark-grey);
+    font-size: 20px;
+}
+

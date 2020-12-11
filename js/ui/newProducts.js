@@ -17,7 +17,7 @@ export function newProducts(json) {
             </div>
         </div>
         <div class="view-more-btn">
-                <a href="#">View more</a>
+                <a href="./products.html">View more</a>
             </div>
 
         `;

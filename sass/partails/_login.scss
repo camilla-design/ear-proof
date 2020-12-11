@@ -1,29 +1,37 @@
+.login-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 .login-form {
     text-align: center;
+    padding-bottom: 39%;
 
-input[type=text], input[type=password] {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
+    @media (min-width: $media-ipad) {
+        padding-bottom: 30%;
+    }
 
-  button {
-      background: getColor(gold);
-      color: getColor(dark-grey);
-      font-size: 20px;
-  }
+    @media (min-width: $media-laptop) {
+        padding-bottom: 12%;
+    }
 
 }
 
 .avatar-login {
     text-align: center;
-    padding-top: 16px;
+    padding-top: 30%;
     padding-bottom: 16px;
+
+    @media (min-width: $media-ipad) {
+        padding-top: 25%;
+    } 
+    @media (min-width: $media-laptop) {
+        padding-top: 15%;
+    }
     i {
         font-size: 50px;
         color: getColor(gold);
     }
+
 }

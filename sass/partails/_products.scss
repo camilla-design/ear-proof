@@ -1,6 +1,37 @@
+.product-header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.filter-input {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    input {
+        width: 90%;
+        padding: 8px;
+        font-size: 18px;
+    }
+}
+
+.products-wrapper {
+    background: getColor(black);
+    color: getColor(white);
+}
+
 .products-container {
+    .product-img {
+    background: getColor(light-grey);
+    border-radius: 50%;
+
+    &:hover {
+        background: getColor(gold);
+    }
+}
     img {
-        width: 200px;
+        width: 150px;
+        padding: 20px;
     }
 
     .container {
@@ -9,7 +40,11 @@
 
     a {
         text-decoration: none;
-        color: getColor(dark-grey);
+        color: getColor(white);
+
+        &:hover {
+            color: getColor(gold);
+        }
 
         h3 {
             font-size: 20px;
@@ -26,5 +61,17 @@
 
     .product-description {
         padding-top: 40px;
+        padding-left: 16px;
+    }
+
+    @media (min-width: $media-ipad) {
+        column-count: 2;
+        
+    }
+
+    @media (min-width: $media-laptop) {
+        column-count: 3;
+        max-width: $media-laptop;
+        margin: 0 auto;
     }
 }

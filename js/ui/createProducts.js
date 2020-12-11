@@ -9,19 +9,19 @@ export function createProducts(json) {
 
     json.forEach(function (product) {
 
-        let allUrlImages = "";
+        let imageUrl = "";
 
         if (!product.image_url) {
-            allUrlImages = baseUrl + product.image.url;
+            imageUrl = baseUrl + product.image.url;
         } else {
-            allUrlImages = product.image_url;
+            imageUrl = product.image_url;
         }
 
         productContainer.innerHTML += `
         <a href="./detail.html?id=${product.id}">
         <div class="container">
         <div class="product-img">
-        <img src="${allUrlImages}" />
+        <img src="${imageUrl}" />
         </div>
         <div class="product-description">
         <h3>${product.title}</h3>

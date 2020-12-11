@@ -21,8 +21,6 @@ export function featuredProducts(json) {
                 allUrlImages = product.image_url;
             }
 
-
-
             featuredContainer.innerHTML += `
             <div class="featured-content">
                 <img src="${allUrlImages}" />
@@ -33,7 +31,6 @@ export function featuredProducts(json) {
             featuredHeadline.style.display = "block";
         }
 
-        
 
     });
 

@@ -15,13 +15,14 @@
 <body>
     <div class="navigation-container">
         <nav class="navbar">
+            <!--hamburgerMenu.js-->
             <a href="./index.html" class="navbar__brand-name">Ear<span>Proof</span></a>
             <div class="navbar__nav-links" id="nav-links">
                 <a href="./index.html">Home</a>
                 <a href="./products.html">Products</a>
-                <a href="./login.html" class="navbar__login-link">Login</a>
             </div>
             <div class="navbar__nav-cart">
+                <a href="./login.html" class="navbar__login-link">Login</a>
                 <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
             </div>
             <a href="javascript:void(0);" class="icon__hamburger-menu" onclick="hamburgerMenu()">
@@ -31,45 +32,32 @@
         </nav>
     </div>
 
+    <div class="products-wrapper">
     <div class="product-header">
         <h1>Products</h1>
     </div>
 
     <div class="filter-input">
-        <input class="filter" placeholder="Filter products">
+        <input class="filter" placeholder="Filter by name">
+        <!--filterProducts.js-->
     </div>
 
     <div class="products-container">
         <div class="message-container"></div>
-
+        <!--createProducts.js-->
     </div>
+</div>
 
     
 
     <footer>
-        <footer>
-            <div class="footer-container">
-                <div class="brand-logo">
-                <a href="#" class="navbar__brand-name">Ear<span>Proof</span></a>
-            </div>
-            <div class="product-overview">
-                <h5>Product Overview</h5>
-                <li>Headphones</li>
-                <li>Earphones</li>
-            </div>
-            <div class="generally">
-                <h5>Generally</h5>
-                <li>Services</li>
-                <li>About us</li>
-            </div>
-            <div class="social">
-                <h5>Social</h5>
-                <li>News</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
-            </div>
-            </div>
-        </footer>
+        <div class="brand-logo">
+            <a href="./index.html" class="navbar__brand-name">Ear<span>Proof</span></a>
+        </div>
+        <div class="copyright">
+            © 2020 Copyright:
+            <a href="http://camillareppen.no">Camilla Reppen</a>
+        </div>
     </footer>
 
     <script src="./js/settings/hamburgerMenu.js"></script>
