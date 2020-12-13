@@ -23,11 +23,10 @@ const productUrl = baseUrl + "/products";
         const response = await fetch(homeUrl);
         const img = await response.json();
 
-        console.log(img);
         getHeroImage(img);
 
     } catch (error) {
-        displayMessage("error", error, ".message-container");
+        displayMessage("error", error, ".featured-products-container");
     }
 })();
 
@@ -41,6 +40,6 @@ const productUrl = baseUrl + "/products";
 
 
     } catch (error) {
-        displayMessage("error", error, ".message-container");
+        displayMessage("error", error, ".featured-products-container");
     }
 })();

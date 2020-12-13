@@ -44,11 +44,16 @@ const productUrl = baseUrl + "/products/" + id;
         container.innerHTML = `
         <a class="back-btn" href="./products.html"> Go back </a>
         <div class="product">
+        <div class="product-image">
         <img src="${baseUrl}${details.image.formats.thumbnail.url}" />
+        </div>
+        <div class="product-text">
         <h2>${details.title}</h2>
         <p>${details.description}</p>
         <h3>$ ${details.price}</h3>
         <a class="add-cart-btn" data-id="${details.id}" data-name="${details.title}" data-price="${details.price}" data-image="${details.image.formats.thumbnail.url}" href="#">Add to cart</a>
+        </div>
+        </div>
         <div class="delivery-icon-container">
         <div class="delivery">
         <div class="fast-delivery-icon">

@@ -29,9 +29,12 @@
 
     @media (min-width: $media-ipad) {
         width: 100%;
-        margin: 0 auto;
-        display: flex;
         height: 300px;
+        .hero-content {
+            display: flex;
+            width: $media-ipad;
+            margin: 0 auto;
+        }
 
         .hero-image {
             display: none;
@@ -56,10 +59,15 @@
     }
 
     @media (min-width: $media-laptop) {
-        max-width: $media-laptop;
-        margin: 0 auto;
+        width: 100%;
         height: 500px;
         padding-top: 90px;
+
+        .hero-content {
+            display: flex;
+            width: $media-laptop;
+            margin: 0 auto;
+        }
 
         img {
             width: 600px;

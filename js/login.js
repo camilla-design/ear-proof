@@ -3,8 +3,7 @@ import {
 } from "./components/common/displayMessage.js";
 import {
     saveToken,
-    saveUser,
-    getToken
+    saveUser
 } from "./utils/storage.js";
 import {
     baseUrl
@@ -12,7 +11,6 @@ import {
 import {
     createMenu
 } from "./components/common/createMenu.js";
-
 
 createMenu();
 
@@ -67,9 +65,7 @@ async function doLogin(username, password) {
 
             location.href = "/admin.html";
         }
-
-
-
+        
         if (json.error) {
             displayMessage("error", "Invalid login details", ".message-container");
         }

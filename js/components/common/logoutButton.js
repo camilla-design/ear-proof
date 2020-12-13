@@ -1,5 +1,5 @@
 import {
-    clearStorage
+    clearUserStorage
 } from "../../utils/storage.js";
 
 export function logoutButton() {
@@ -11,7 +11,7 @@ export function logoutButton() {
             const doLogout = confirm("Are you sure you want to logout?");
 
             if (doLogout) {
-                clearStorage();
+                clearUserStorage();
                 location.href = "/login.html";
             }
         }

@@ -32,7 +32,6 @@ form.addEventListener("submit", submitForm);
 function submitForm(event) {
     event.preventDefault();
 
-
     message.innerHTML = "";
 
     const titleValue = title.value.trim();
@@ -40,7 +39,6 @@ function submitForm(event) {
     const priceValue = parseFloat(price.value);
     const imageValue = image.value;
     const featuredValue = featured.value;
-
 
     if (titleValue.length === 0 || descriptionValue.length === 0 || isNaN(priceValue) || priceValue.length === 0 || imageValue.length === 0) {
         return displayMessage("error", "Proper values need to be filled in", ".message-container");
@@ -60,7 +58,6 @@ async function addProduct(title, description, price, image, featured) {
         image_url: image,
         featured: featured
     });
-
 
     const options = {
         method: "POST",
@@ -84,7 +81,6 @@ async function addProduct(title, description, price, image, featured) {
             displayMessage("error", json.message, ".message-container");
         }
 
-        console.log(json);
     } catch (error) {
         displayMessage("error", "error", ".message-container");
     }

@@ -3,9 +3,13 @@
     padding-top: 20px;
     text-align: center;
     padding-bottom: 20px;
+    color: getColor(white);
+    font-size: 20px;
 
     img {
-        width: 100px;
+        width: 90px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .products {
@@ -15,12 +19,17 @@
         width: 300px;
         margin: 0 auto;
     }
+    h3 {
+        color: getColor(gold);
+    }
+    h4 {
+        color: getColor(light-grey);
+    }
 
 }
 
 .total-container {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-    margin: 0 auto;
+    text-align: center;
+    color: getColor(white);
+    font-size: 40px;
 }

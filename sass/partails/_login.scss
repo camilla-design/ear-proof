@@ -7,6 +7,7 @@
 .login-form {
     text-align: center;
     padding-bottom: 39%;
+    color: getColor(light-grey);
 
     @media (min-width: $media-ipad) {
         padding-bottom: 30%;
@@ -20,14 +21,11 @@
 
 .avatar-login {
     text-align: center;
-    padding-top: 30%;
+    padding-top: 20%;
     padding-bottom: 16px;
 
-    @media (min-width: $media-ipad) {
-        padding-top: 25%;
-    } 
     @media (min-width: $media-laptop) {
-        padding-top: 15%;
+        padding-top: 10%;
     }
     i {
         font-size: 50px;

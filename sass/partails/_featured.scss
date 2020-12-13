@@ -1,5 +1,16 @@
 .featured-container {
     background: getColor(black);
+    padding-bottom: 200px;
+    padding-top: 16px;
+
+    h3 {
+        color: getColor(white);
+        text-transform: uppercase;
+
+    }
+    h4 {
+        color: getColor(light-grey);
+    }
     .featured-products-headline {
         text-align: center;
 
@@ -25,20 +36,9 @@
 
     }
 
-    .featured-products-container {
-        padding-top: 20px;
-
-        h3 {
-            color: getColor(white);
-            text-transform: uppercase;
-
-        }
-        h4 {
-            color: getColor(light-grey);
-        }
-    }
 
     @media (min-width: $media-ipad) {
+        padding-bottom: 300px;
 
         .qoute {
             display: flex;

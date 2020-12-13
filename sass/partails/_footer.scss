@@ -1,11 +1,14 @@
 footer {
-    background: getColor(black);
-    margin-top: 50px;
+    background: getColor(dark-grey);
     padding-bottom: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
     .navbar__brand-name {
         font-size: 45px;
         text-align: center;
+        padding: 0;
         padding-top: 30px;
         font-weight: 300;
     }

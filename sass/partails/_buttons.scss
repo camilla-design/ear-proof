@@ -24,7 +24,7 @@
 .add-cart-btn {
     text-decoration: none;
     text-transform: uppercase;
-    background: getColor(dark-grey);
+    background: green;
     color: getColor(white);
     border-radius: 5px;
     box-shadow: 5px 5px getColor(light-grey);
@@ -46,5 +46,25 @@ button {
     background: getColor(gold);
     color: getColor(dark-grey);
     font-size: 20px;
+}
+
+.back-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: getColor(light-grey);
+    color: getColor(dark-grey);
+    border-radius: 5px;
+    box-shadow: 5px 5px getColor(light-grey);
+    padding: 10px;
+}
+.logout-button {
+        text-decoration: none;
+        text-transform: uppercase;
+        background: getColor(dark-grey);
+        padding: 10px;
+        color: getColor(gold);
+        border-radius: 5px;
+        box-shadow: 5px 5px getColor(light-grey);
+        font-size: 12px;
 }
 

@@ -10,7 +10,6 @@ export function featuredProducts(json) {
 
     json.forEach(function (product) {
 
-
         if (product.featured === true) {
 
             let allUrlImages = "";
@@ -31,8 +30,6 @@ export function featuredProducts(json) {
             featuredHeadline.style.display = "block";
         }
 
-
     });
-
 
 };

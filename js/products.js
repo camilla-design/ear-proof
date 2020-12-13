@@ -7,6 +7,9 @@ import {
 import {
     filterProducts
 } from "./ui/filterProducts.js";
+import {
+    displayMessage
+} from "./components/common/displayMessage.js";
 
 const productUrl = baseUrl + "/products/";
 
@@ -19,6 +22,6 @@ const productUrl = baseUrl + "/products/";
         filterProducts(json);
 
     } catch (error) {
-        console.log(error);
+        displayMessage("error", error, ".products-container");
     }
 })();

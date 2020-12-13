@@ -18,7 +18,7 @@ export function createMenu() {
     let authLink = `<a href="login.html" class="${pathname === "/login.html" || pathname === "/login.html" ? "active" : ""}">login</a>`;
 
     if (username) {
-        authLink = `<button id="logout">Logout ${username}</button>
+        authLink = `<button class="logout-button" id="logout">Logout ${username}</button>
                     <a href="add.html" class="${pathname === "/add.html" ? "active" : ""}">Add product</a>
                     <a href="admin.html" class="${pathname === "/admin.html" ? "active" : ""}">Edit product</a>`;
 

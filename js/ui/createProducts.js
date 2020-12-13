@@ -20,13 +20,13 @@ export function createProducts(json) {
         productContainer.innerHTML += `
         <a href="./detail.html?id=${product.id}">
         <div class="container">
-        <div class="product-img">
-        <img src="${imageUrl}" />
-        </div>
-        <div class="product-description">
-        <h3>${product.title}</h3>
-        <h4>$ ${product.price}</h4>
-        </div>
+            <div class="product-img">
+                <img src="${imageUrl}" />
+            </div>
+            <div class="product-description">
+                <h3>${product.title}</h3>
+                <h4>$ ${product.price}</h4>
+            </div>
         </div>
         </a>
         `;
