@@ -1,15 +1,15 @@
 footer {
     background: getColor(dark-grey);
-    padding-bottom: 40px;
+    padding: 8px;
     position: fixed;
     bottom: 0;
     width: 100%;
 
     .navbar__brand-name {
-        font-size: 45px;
+        font-size: 30px;
         text-align: center;
         padding: 0;
-        padding-top: 30px;
+        padding-top: 8px;
         font-weight: 300;
     }
     .copyright {
