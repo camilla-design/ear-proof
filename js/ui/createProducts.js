@@ -1,6 +1,4 @@
-import {
-    baseUrl
-} from "../settings/baseUrl.js";
+
 
 export function createProducts(json) {
     const productContainer = document.querySelector(".products-container");
@@ -12,7 +10,7 @@ export function createProducts(json) {
         let imageUrl = "";
 
         if (!product.image_url) {
-            imageUrl = baseUrl + product.image.url;
+            imageUrl = product.image.url;
         } else {
             imageUrl = product.image_url;
         }

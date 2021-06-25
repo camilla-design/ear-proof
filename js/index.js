@@ -14,6 +14,7 @@ import {
     displayMessage
 } from "./components/common/displayMessage.js";
 
+
 const homeUrl = baseUrl + "/home";
 const productUrl = baseUrl + "/products";
 
