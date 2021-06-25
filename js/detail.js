@@ -45,7 +45,7 @@ const productUrl = baseUrl + "/products/" + id;
         <a class="back-btn" href="./products.html"> Go back </a>
         <div class="product">
         <div class="product-image">
-        <img src="${baseUrl}${details.image.formats.thumbnail.url}" />
+        <img src="${details.image.formats.thumbnail.url}" />
         </div>
         <div class="product-text">
         <h2>${details.title}</h2>
